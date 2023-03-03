@@ -2,7 +2,7 @@ part of 'weather.dart';
 
 class WeatherDaily extends Equatable {
   final double tempMin;
-  final String tempMax;
+  final double tempMax;
   final List<Weather> weather;
   final String date;
 

@@ -5,11 +5,11 @@ import 'package:weather_app/core/app/presentation/manager/error/server_failure.d
 import 'package:weather_app/feature/weather/domain/entities/weather.dart';
 import 'package:weather_app/feature/weather/domain/repositories/base_weather_repository.dart';
 
-class GetWeatherByLatLon
+class GetWeatherByLatLonUseCase
     extends BaseUseCase<List<WeatherDaily>, LocationInformationParameter> {
   final BaseWeatherRepository baseWeatherRepository;
 
-  GetWeatherByLatLon(this.baseWeatherRepository);
+  GetWeatherByLatLonUseCase(this.baseWeatherRepository);
 
   @override
   Future<Either<Failure, List<WeatherDaily>>> call(
